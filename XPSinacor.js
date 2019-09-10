@@ -109,7 +109,7 @@ module.exports = class XPSinacor {
     if(pNew[1])
     {
       pNew[1] = pNew.pop();
-      if(pNew[1] === 'PN' || pNew[1] === 'ON')
+      if(pNew[1] === 'PN' || pNew[1] === 'ON'|| pNew[1] === 'PNB' || pNew[1] === 'UNT')
       pNew[0] = pNew[0] + ' '+pNew[1]
     }
     return pNew[0]; 
