@@ -3,7 +3,7 @@
 
 Interpretador do padrão SINACOR com leitura através do PDF contendo todas as notas de corretagem.
 
-# Utilização
+## Utilização
 
 Listar as negociações de uma nota de corretagem:
 
@@ -23,4 +23,18 @@ pdf(dataBuffer).then(function(data) {
         console.log(nota.negotiation(line));
     });   
 });
+```
+
+### Docker
+
+Running the sample code above inside the Docker
+
+* Build
+
+`docker  build -t=sinacor .`
+
+* Run
+
+```
+docker run -v ${PWD}/fixtures:/app/fixtures -t sinacor
 ```
