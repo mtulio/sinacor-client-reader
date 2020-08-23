@@ -27,8 +27,7 @@ pdf(dataBuffer).then(function(data) {
 
     negotiations.forEach(line => {
         resp["negotiations"].push(nota.negotiation(line))
-        //console.log(nota.negotiation(line));
     });
 
-    console.log(resp)
+    console.log(JSON.stringify(resp, null, 2));
 });

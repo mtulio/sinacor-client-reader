@@ -38,3 +38,10 @@ Running the sample code above inside the Docker
 ```
 docker run -v ${PWD}/fixtures:/app/fixtures -t sinacor
 ```
+
+* Run reading from STDIN
+
+```
+docker run -v ${PWD}/fixtures:/notas \
+    -t sinacor cli.js /notas/nc.pdf
+```
